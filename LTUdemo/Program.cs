@@ -52,7 +52,7 @@ public class Program
         }
     }
 
-    public List<SalesPerson> PrintList(List<SalesPerson> salePersonList, int? max, string message)
+    public List<SalesPerson> PrintList(List<SalesPerson> salePersonList, int max, string message)
     {
         var tmpList = salePersonList.Where(a => a.SoldArticles < max)
                                    .OrderByDescending(a => a.SoldArticles)
